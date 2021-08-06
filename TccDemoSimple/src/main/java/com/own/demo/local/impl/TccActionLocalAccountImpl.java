@@ -149,8 +149,6 @@ public class TccActionLocalAccountImpl implements TccActionLocalAccount {
                             - accountTransaction.getAmount());
                     firstAccountDAO.updateFreezedAmount(account);
                     //删除流水
-//                    firstAccountTransactionDAO.deleteTransaction(txId);
-
                     AccountTransaction updateTrans=new AccountTransaction();
                     updateTrans.setTxId(txId);
                     updateTrans.setTxStatus(AccountTransaction.TX_STATUS_FAIL);
